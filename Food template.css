@@ -1,0 +1,23 @@
+@charset"UTF-8";
+*{margin: 0px;box-sizing: border-box;}body{font-family: Arial,Helvettica,Raleway,sans-serif;}
+.sidenav{width: 0;height: 100%;position: fixed;overflow: auto;z-index: 1;transition: 0.3s; box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.7);padding-top:50px;background-color:rgb(255,255,255);overflow-x: hidden;}
+.sidenav a{text-decoration: none;color: #000;display: block;font-size: 25px;padding: 20px;}.sidenav a:hover{background-color: #eee;}h2{font-weight: lighter;text-align: center;padding: 5px;}
+.nav{width: 100%;background-color: #fff;overflow: hidden;font-size: 25px;padding: 10px 30px;background-color:#fff;position: fixed;top: 0;}
+.nav span{width: 5%;float: left; margin-left: 15px; cursor: pointer;}.nav h4{width: 45%;float: left;text-align:right;font-weight: lighter;}h3{font-weight: lighter;}
+#content{padding: 30px 90px;overflow: hidden;}#food{overflow: hidden;}#food span{overflow: hidden;display: block;margin: 2px 0px;} #food span > div{width: 25%;float: left;padding: 15px; padding-left: 0px;margin: 10px 0px;}#food p{text-align: center;font-size: 15px;line-height: 20px;margin: 5px 0px;}
+#food img{width: 100%;}.select{width: 200px; margin: 50px auto;} .select span{padding: 10px 15px; font-size: 18px;}span.hum{background-color: #000;color: #fff;}.select span:hover{background-color: #000;color:#fff; cursor: pointer;}
+span.hum:hover{background-color: #f1f1f1; color: #000;}hr{margin: 80px 0px;border:1px solid #eee;}#about h2{margin: 30px 0px;margin-bottom: 5px;}#about img{width: 70%;margin: 10px auto;display: block;}
+#about h4{font-weight: lighter;font-style: italic;text-align: center;}#about p{margin: 20px 0px;font-size: 15px; text-align: center;line-height: 20px;}#footer p:not(.lorem p){margin: 20px 0px;line-height: 20px;font-size: 15px;}
+#footer > div{width: 33.33%;float: left;}#footer h2{text-transform: uppercase; text-align: left;}#footer img{width: 60px;float: left; height: 60px;}.lorem p{margin: 5px 0px;}
+.lorem{display:block;overflow: hidden;padding: 10px;}.such{border-bottom: 1px solid #d7d7d7; } .lorem > div{float: left;padding:5px 10px;}.lorem:hover{background-color: #d7d7d7;}#footer a{text-decoration: underline;color: inherit;}
+.tag span{padding: 2px;color: #fff; background-color: rgba(80,80,80,0.9);margin:8px 5px;display: inline-block;font-size: 13px;font-family: serif;}span.trav{background-color: #000;color: #fff;padding: 5px 7px;}div.tag{width: 100%;}
+@media screen and (max-width:1000px ){
+	.nav{padding: 10px 5px;}
+	#content{padding: 30px;}
+	#food span > div{width: 50%;}
+	#about img{width: 90%;}
+}
+@media screen and (max-width: 600px){
+	#food span > div{width: 100%;}
+	#footer > div{width: 100%;}
+}
